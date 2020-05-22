@@ -87,7 +87,7 @@ public:
                 Tail = temp;
             }
             Count++;
-    }
+}
     void insertFirst(const T &f)
     {
  /*       if (isEmpty())
@@ -216,18 +216,18 @@ Count--;
     void clear()
     {
     while (Count!=0)
-    delete(0);
+    deleteAtPos(0);
     }
-    void getLast()
+    int getLast()
     {
-    if(Tail!=0)
+    if(Tail!=NULL)
         {
        return Tail->data;
         }
     }
-    void getFirst()
+    int getFirst()
     {
-    if(Head!=0)
+    if(Head!=NULL)
         {
        return Head->data;
         }
@@ -243,7 +243,7 @@ Count--;
         return true;
         }
     else
-        pt = pt->data;
+        pt = pt->next;
         }
       return false;
         }
