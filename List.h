@@ -120,29 +120,22 @@ public:
     {
     if(p == 0)
     {
-      cout << "Input position: ";
-      cin >> p;
+     return false;
     }
     if(p < 1 || p > Count + 1)
     {
-      cout << "Incorrect position !!!\n";
-      return;
+        insertAtPos (p);
+        return true;
     }
     if(p == Count + 1)
     {
-      int data;
-      cout << "Input new number: ";
-      cin >> data;
-      insertLast(data);
-      return;
+      insertLast(p);
+      return true;
     }
     else if(p == 1)
     {
-      int data;
-      cout << "Input new number: ";
-      cin >> data;
-      insertFirst(data);
-      return;
+      insertFirst(p);
+      return true;
     }
     int i = 1;
     Node<T> * Ins = Head;
@@ -153,14 +146,15 @@ public:
     }
     Node<T> * PrevIns = Ins->prev;
     Node<T> * temp = new Node<T>;
-    cout << "Input new number: ";
-    cin >> temp->data;
+    temp->data=p;
     if(PrevIns != 0 && Count != 1)
+    {
       PrevIns->next = temp;
     temp->next = Ins;
     temp->prev = PrevIns;
     Ins->prev = temp;
     Count++;
+    }
     }
     void deleteLast()
     {
