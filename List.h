@@ -88,7 +88,7 @@ public:
             }
             Count++;
 }
-    void insertFirst(const T &f)
+    bool insertFirst(const T &f)
     {
  /*       if (isEmpty())
         Head = Tail = new Node<T>;
