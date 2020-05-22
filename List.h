@@ -87,7 +87,7 @@ public:
                 Tail = temp;
             }
             Count++;
-    )
+    }
     void insertFirst(const T &f)
     {
  /*       if (isEmpty())
