@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1590129507 source:c:\users\Нелли\desktop\СГТУ\2 СЕМЕСТР\Языки программирования с++\Лабораторная №4\lab4var5\main.cpp
+	<iostream>
+	"List.h"
+
+1590087202 source:c:\users\Нелли\desktop\СГТУ\2 СЕМЕСТР\Языки программирования с++\Лабораторная №4\lab4var5\list.cpp
+
+1590130467 c:\users\Нелли\desktop\СГТУ\2 СЕМЕСТР\Языки программирования с++\Лабораторная №4\lab4var5\list.h
+	<iostream>
+
